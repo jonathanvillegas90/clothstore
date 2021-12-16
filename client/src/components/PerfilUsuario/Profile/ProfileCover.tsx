@@ -71,19 +71,19 @@ const ProfileCover = (props: Props) => {
     pauseOnHover: true,
     draggable: true,
     progress: undefined,
-    });
+  });
 
-  function Alerta (){
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
+  function Alerta() {
+    <ToastContainer
+      position="top-center"
+      autoClose={5000}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+    />
   }
 
   return (
@@ -202,7 +202,7 @@ const ProfileCover = (props: Props) => {
           <Box sx={{ width: '70%' }}>
             <ModalUpdateUser id={props.id} getOneUser={props.getOneUser} />
 
-            <Button fullWidth color='secondary' onClick={()=>{props.userName == "" ? Alerta() : "" }} classes={{ root: classes.buttonProfile }} size="medium" variant="contained">
+            {/* <Button fullWidth color='secondary' onClick={()=>{props.userName == "" ? Alerta() : "" }} classes={{ root: classes.buttonProfile }} size="medium" variant="contained">
               {
                 props.userName == "" ?
                 <>
@@ -215,7 +215,7 @@ const ProfileCover = (props: Props) => {
                 Nueva Publicacion
               </Link>
               }
-            </Button>
+            </Button> */}
           </Box >
         </Box >
       </Box >
